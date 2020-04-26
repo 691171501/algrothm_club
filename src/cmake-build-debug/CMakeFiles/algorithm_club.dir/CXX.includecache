@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jingzheng/work_project/algorithm-club/src/alg_heap.h
+algorithm
+-
+stddef.h
+-
+
+/home/jingzheng/work_project/algorithm-club/src/main.cpp
+iostream
+-
+alg_heap.h
+/home/jingzheng/work_project/algorithm-club/src/alg_heap.h
+
