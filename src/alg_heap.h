@@ -33,7 +33,6 @@ namespace algorithm {
 
 
         int index(const T& t , int idx ) const {
-
             if (idx >= size_) return -1;
 
             if (data_[idx] == t) {
@@ -75,7 +74,7 @@ namespace algorithm {
         void remove(const T& t) {
           int idx = index(t, 0);
           if (idx != -1) {
-              Swap(idx, size_-1);
+              swap(idx, size_-1);
               size_--;
               shiftup(idx);
               shiftdown(idx);
@@ -84,21 +83,20 @@ namespace algorithm {
         }
 
     private:
-        void Swap(std::size_t lidx, std::size_t ridx) {
+        void swap(std::size_t lidx, std::size_t ridx) {
             auto t = data_[lidx];
             data_[lidx] = data_[ridx];
             data_[ridx] = t;
         }
 
         void shiftup(int idx){
-
             if (idx <= 0 )
                 return;
 
             int parent_idx = floor((idx - 1) / 2);
             if (parent_idx < 0) return;
             if (data_[parent_idx] < data_[idx]) {
-                Swap(idx, parent_idx);
+                swap(idx, parent_idx);
                 shiftup(parent_idx);
             }
 
@@ -114,15 +112,15 @@ namespace algorithm {
             if ((left < size_) && (right < size_)) {
                 int max_l_r = data_[left] < data_[right] ? right : left;
                 if (data_[idx] < data_[max_l_r]) {
-                    Swap(idx, max_l_r);
+                    swap(idx, max_l_r);
                     shiftdown(max_l_r);
                 }
 
             } else if ((left < size_) && data_[idx] < data_[left]) {
-                Swap(idx, left);
+                swap(idx, left);
                 shiftdown(left);
             } else if ((right < size_) && data_[idx] < data_[right]) {
-                Swap(idx, right);
+                swap(idx, right);
                 shiftdown(right);
             }
 
