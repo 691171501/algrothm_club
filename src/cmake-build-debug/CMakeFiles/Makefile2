@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /home/jingzheng/work_project/algorithm-club/src/cmake-build-d
 CMakeFiles/algorithm_club.dir/all:
 	$(MAKE) -f CMakeFiles/algorithm_club.dir/build.make CMakeFiles/algorithm_club.dir/depend
 	$(MAKE) -f CMakeFiles/algorithm_club.dir/build.make CMakeFiles/algorithm_club.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jingzheng/work_project/algorithm-club/src/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target algorithm_club"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jingzheng/work_project/algorithm-club/src/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target algorithm_club"
 .PHONY : CMakeFiles/algorithm_club.dir/all
 
 # Include target in all.
@@ -98,6 +98,80 @@ CMakeFiles/algorithm_club.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/algorithm_club.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/RBTree.test.dir
+
+# All Build rule for target.
+CMakeFiles/RBTree.test.dir/all:
+	$(MAKE) -f CMakeFiles/RBTree.test.dir/build.make CMakeFiles/RBTree.test.dir/depend
+	$(MAKE) -f CMakeFiles/RBTree.test.dir/build.make CMakeFiles/RBTree.test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jingzheng/work_project/algorithm-club/src/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target RBTree.test"
+.PHONY : CMakeFiles/RBTree.test.dir/all
+
+# Include target in all.
+all: CMakeFiles/RBTree.test.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/RBTree.test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jingzheng/work_project/algorithm-club/src/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/RBTree.test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jingzheng/work_project/algorithm-club/src/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/RBTree.test.dir/rule
+
+# Convenience name for target.
+RBTree.test: CMakeFiles/RBTree.test.dir/rule
+
+.PHONY : RBTree.test
+
+# clean rule for target.
+CMakeFiles/RBTree.test.dir/clean:
+	$(MAKE) -f CMakeFiles/RBTree.test.dir/build.make CMakeFiles/RBTree.test.dir/clean
+.PHONY : CMakeFiles/RBTree.test.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/RBTree.test.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/RBTree.benchmark.dir
+
+# All Build rule for target.
+CMakeFiles/RBTree.benchmark.dir/all:
+	$(MAKE) -f CMakeFiles/RBTree.benchmark.dir/build.make CMakeFiles/RBTree.benchmark.dir/depend
+	$(MAKE) -f CMakeFiles/RBTree.benchmark.dir/build.make CMakeFiles/RBTree.benchmark.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jingzheng/work_project/algorithm-club/src/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target RBTree.benchmark"
+.PHONY : CMakeFiles/RBTree.benchmark.dir/all
+
+# Include target in all.
+all: CMakeFiles/RBTree.benchmark.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/RBTree.benchmark.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jingzheng/work_project/algorithm-club/src/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/RBTree.benchmark.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jingzheng/work_project/algorithm-club/src/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/RBTree.benchmark.dir/rule
+
+# Convenience name for target.
+RBTree.benchmark: CMakeFiles/RBTree.benchmark.dir/rule
+
+.PHONY : RBTree.benchmark
+
+# clean rule for target.
+CMakeFiles/RBTree.benchmark.dir/clean:
+	$(MAKE) -f CMakeFiles/RBTree.benchmark.dir/build.make CMakeFiles/RBTree.benchmark.dir/clean
+.PHONY : CMakeFiles/RBTree.benchmark.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/RBTree.benchmark.dir/clean
 
 .PHONY : clean
 

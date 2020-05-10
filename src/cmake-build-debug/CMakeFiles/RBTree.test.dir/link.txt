@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/RBTree.test.dir/RBTree.test.cc.o  -o RBTree.test -lglog -lgflags -lgtest -lpthread 

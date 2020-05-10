@@ -123,6 +123,86 @@ algorithm_club/fast:
 	$(MAKE) -f CMakeFiles/algorithm_club.dir/build.make CMakeFiles/algorithm_club.dir/build
 .PHONY : algorithm_club/fast
 
+#=============================================================================
+# Target rules for targets named RBTree.test
+
+# Build rule for target.
+RBTree.test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 RBTree.test
+.PHONY : RBTree.test
+
+# fast build rule for target.
+RBTree.test/fast:
+	$(MAKE) -f CMakeFiles/RBTree.test.dir/build.make CMakeFiles/RBTree.test.dir/build
+.PHONY : RBTree.test/fast
+
+#=============================================================================
+# Target rules for targets named RBTree.benchmark
+
+# Build rule for target.
+RBTree.benchmark: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 RBTree.benchmark
+.PHONY : RBTree.benchmark
+
+# fast build rule for target.
+RBTree.benchmark/fast:
+	$(MAKE) -f CMakeFiles/RBTree.benchmark.dir/build.make CMakeFiles/RBTree.benchmark.dir/build
+.PHONY : RBTree.benchmark/fast
+
+RBTree.benchmark.o: RBTree.benchmark.cc.o
+
+.PHONY : RBTree.benchmark.o
+
+# target to build an object file
+RBTree.benchmark.cc.o:
+	$(MAKE) -f CMakeFiles/RBTree.benchmark.dir/build.make CMakeFiles/RBTree.benchmark.dir/RBTree.benchmark.cc.o
+.PHONY : RBTree.benchmark.cc.o
+
+RBTree.benchmark.i: RBTree.benchmark.cc.i
+
+.PHONY : RBTree.benchmark.i
+
+# target to preprocess a source file
+RBTree.benchmark.cc.i:
+	$(MAKE) -f CMakeFiles/RBTree.benchmark.dir/build.make CMakeFiles/RBTree.benchmark.dir/RBTree.benchmark.cc.i
+.PHONY : RBTree.benchmark.cc.i
+
+RBTree.benchmark.s: RBTree.benchmark.cc.s
+
+.PHONY : RBTree.benchmark.s
+
+# target to generate assembly for a file
+RBTree.benchmark.cc.s:
+	$(MAKE) -f CMakeFiles/RBTree.benchmark.dir/build.make CMakeFiles/RBTree.benchmark.dir/RBTree.benchmark.cc.s
+.PHONY : RBTree.benchmark.cc.s
+
+RBTree.test.o: RBTree.test.cc.o
+
+.PHONY : RBTree.test.o
+
+# target to build an object file
+RBTree.test.cc.o:
+	$(MAKE) -f CMakeFiles/RBTree.test.dir/build.make CMakeFiles/RBTree.test.dir/RBTree.test.cc.o
+.PHONY : RBTree.test.cc.o
+
+RBTree.test.i: RBTree.test.cc.i
+
+.PHONY : RBTree.test.i
+
+# target to preprocess a source file
+RBTree.test.cc.i:
+	$(MAKE) -f CMakeFiles/RBTree.test.dir/build.make CMakeFiles/RBTree.test.dir/RBTree.test.cc.i
+.PHONY : RBTree.test.cc.i
+
+RBTree.test.s: RBTree.test.cc.s
+
+.PHONY : RBTree.test.s
+
+# target to generate assembly for a file
+RBTree.test.cc.s:
+	$(MAKE) -f CMakeFiles/RBTree.test.dir/build.make CMakeFiles/RBTree.test.dir/RBTree.test.cc.s
+.PHONY : RBTree.test.cc.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -157,8 +237,16 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... algorithm_club"
 	@echo "... edit_cache"
+	@echo "... algorithm_club"
+	@echo "... RBTree.test"
+	@echo "... RBTree.benchmark"
+	@echo "... RBTree.benchmark.o"
+	@echo "... RBTree.benchmark.i"
+	@echo "... RBTree.benchmark.s"
+	@echo "... RBTree.test.o"
+	@echo "... RBTree.test.i"
+	@echo "... RBTree.test.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
